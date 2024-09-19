@@ -27,3 +27,22 @@ const Counter = () => {
     </div>
   );
 };
+
+import React, { useState } from "react";
+
+// List Rendering Component
+const TodoList = () => {
+  const [todos, setTodos] = useState([
+    "Learn React",
+    "Build Projects",
+    "Upload to GitHub",
+  ]);
+
+  return (
+    <ul>
+      {todos.map((todo, index) => (
+        <li key={index}>{todo}</li>
+      ))}
+    </ul>
+  );
+};
