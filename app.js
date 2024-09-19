@@ -46,3 +46,21 @@ const TodoList = () => {
     </ul>
   );
 };
+
+import React from "react";
+import Greeting from "./Greeting";
+import Counter from "./Counter";
+import TodoList from "./TodoList";
+
+// Parent Component that uses all components
+const App = () => {
+  return (
+    <div>
+      <Greeting name="Deija" />
+      <Counter />
+      <TodoList />
+    </div>
+  );
+};
+
+export default App;
